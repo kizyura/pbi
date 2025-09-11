@@ -1,4 +1,4 @@
-1 A - Program pertamaku
+## 1 A - Program pertamaku
 diseesaikan oleh kian
 ``` cpp
 #include <iostream>
@@ -8,7 +8,7 @@ int main() {
 }
 ```
 
-1B - Mencetak dengan std::cout
+## 1B - Mencetak dengan std::cout
 diselesaikan oleh kian
 ```cpp
 #include <iostream>
@@ -19,7 +19,7 @@ int main() {
 }
 ```
 
-1C - Mencetak Bilangan
+## 1C - Mencetak Bilangan
 diselesaikan oleh kian
 ```cpp
 #include <iostream>
@@ -30,7 +30,7 @@ int main() {
 }
 ```
 
-1D - Menjumlahkan Bilangan
+## 1D - Menjumlahkan Bilangan
 diselesaikan oleh kian
 ``` cpp
 #include <iostream>
@@ -41,7 +41,7 @@ int main() {
 
 ```
 
-### [01](https://tlx.toki.id/courses/basic-cpp/chapters/01)  F. Mengukur Kandang
+## 1-F - Mengukur Kandang
 diselesaikan oleh kian
 ``` cpp
 #include <iostream>
