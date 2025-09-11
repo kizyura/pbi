@@ -11,10 +11,14 @@
             "id": "d0be20c1a45873b2",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Olim Infor.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Olim Infor"
             }
           }
         ]
@@ -179,6 +183,7 @@
   },
   "active": "d0be20c1a45873b2",
   "lastOpenFiles": [
+    "Olim Infor.md",
     "pbi",
     "Welcome.md"
   ]
