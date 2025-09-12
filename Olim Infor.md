@@ -1,4 +1,6 @@
-## 1 A - Program pertamaku
+
+## BAB 1
+## A - Program pertamaku
 diseesaikan oleh kian
 ``` cpp
 #include <iostream>
@@ -8,7 +10,7 @@ int main() {
 }
 ```
 
-## 1B - Mencetak dengan std::cout
+## B - Mencetak dengan std::cout
 diselesaikan oleh kian
 ```cpp
 #include <iostream>
@@ -19,7 +21,7 @@ int main() {
 }
 ```
 
-## 1C - Mencetak Bilangan
+## C - Mencetak Bilangan
 diselesaikan oleh kian
 ```cpp
 #include <iostream>
@@ -30,7 +32,7 @@ int main() {
 }
 ```
 
-## 1D - Menjumlahkan Bilangan
+## D - Menjumlahkan Bilangan
 diselesaikan oleh kian
 ``` cpp
 #include <iostream>
@@ -41,7 +43,7 @@ int main() {
 
 ```
 
-## 1-F - Mengukur Kandang
+## F - Mengukur Kandang
 diselesaikan oleh kian
 ``` cpp
 #include <iostream>
@@ -56,11 +58,11 @@ int main() {
 ```
 
 
-
-## 2 A -
+## BAB 2
+## A -
 diselesaikan oleh kian
 
-## 2 B. Perkenalan Variabel
+## B. Perkenalan Variabel
 diselesaikan oleh kian
 
 ```cpp
@@ -79,7 +81,7 @@ int main() {
 }
 ```
 
-## 2C. Memperbarui Nilai Variabel
+## C. Memperbarui Nilai Variabel
 diselesaikan oleh kian
 ```cpp
 #include <iostream>
@@ -101,10 +103,10 @@ int main() {
 
 ```
 
-## 2D. Kuis Perubahan Nilai Variabel
+## D. Kuis Perubahan Nilai Variabel
 diselesaikan oleh kian
 
-## 2E. Perkenalan Tipe Data String
+## E. Perkenalan Tipe Data String
 diselesaikan oleh kian
 ```cpp
 #include <iostream> // untuk menggunakan cout dan endl
@@ -124,10 +126,10 @@ int main() {
 
 ```
 
-## 2F. Aturan Variabel
+## F. Aturan Variabel
 diselesaikan oleh kian
 
-## 2G. Jual-Beli Bebek
+## G. Jual-Beli Bebek
 diselesaikan oleh kian
 ```cpp
 #include <iostream>
@@ -153,5 +155,74 @@ int main() {
 }
 ```
 
-###  2H. Rangkuman: Variabel dan Tipe Data
+###  H. Rangkuman: Variabel dan Tipe Data
 diselesaikan oleh kian
+
+## BAB 3
+## A. Variasi Operasi Assignment
+diselesaikan oleh kian
+
+### B. Membeli Kandang
+diselesaikan oleh kian
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int luas_kandang = 12;
+
+    // bulan pertama
+    luas_kandang += 7;
+    cout << luas_kandang << endl;
+
+    // bulan kedua
+    luas_kandang += 7;
+    cout << luas_kandang << endl;
+
+    // bulan ketiga
+    luas_kandang += 7;
+    cout << luas_kandang << endl;
+}
+
+```
+
+### C. Perkenalan While
+diselesaikan oleh kian
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int luas_kandang = 12;
+
+    while (luas_kandang < 33) {
+        luas_kandang += 7;
+        cout << luas_kandang << endl;
+
+
+    }
+}
+```
+
+### D. Pendalaman While
+diselesaikan oleh kian
+
+### E. Membeli Kandang II
+diselesaikan oleh kian
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int luas_kandang = 12;
+    int nomor_baris = 1;
+
+    while (nomor_baris <= 3) {
+        luas_kandang += 7;
+        cout << nomor_baris << ": " << luas_kandang << endl;
+
+        nomor_baris += 1;
+    }
+}
+
+```
