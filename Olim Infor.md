@@ -427,3 +427,81 @@ int main() {
 }
 ```
 
+### H. Rangkuman: Percabangan
+diselesaikan oleh kian
+
+
+## BAB 5
+
+
+### A. Perkenalan For
+diselesaikan oleh kian
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    for (int sisi = 121; sisi <= 125; sisi += 1) {
+        cout << sisi*sisi << endl;
+    }
+}
+
+```
+
+### B. Perkenalan Tipe Data Boolean
+diselesaikan oleh kian
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    bool ada_yang_dijual = false;
+
+    for (int sisi = 121; sisi <= 125; sisi++) {
+        bool kelipatan_2 = sisi % 2 == 0;
+        bool kelipatan_3 = sisi % 3 == 0;
+
+        if (kelipatan_2 && !kelipatan_3) {
+            ada_yang_dijual = true;
+        }
+    }
+
+    if (ada_yang_dijual) {
+        cout << "ada" << endl;
+    } else {
+        cout << "tidak ada" << endl;
+    }
+}
+```
+
+### C. Perkenalan Continue dan Break
+diselesaikan oleh kian (dibantu guru les saya, disuruh masukin kode yang dia buat soalnya)
+
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    for (int luas = 100000; luas <= 200000; luas++) {
+        if (luas % 2 != 0) {
+            continue;
+        }
+        bool kuadrat = false;
+        int n = sqrt(luas);
+        if (luas == n * n){
+            kuadrat = true;
+        }
+        
+        if (kuadrat){
+            cout << luas << endl;
+            break;
+        }
+    }
+}
+```
+
+### D. Kuis Perulangan & Percabangan
+diselesaikan oleh kian
+
