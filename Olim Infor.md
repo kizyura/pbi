@@ -301,3 +301,129 @@ int main() {
 
 ### I. Rangkuman: Perulangan
 diselesaikan oleh kian
+
+## BAB 4
+
+### A. Perkenalan If
+diselesaikan oleh kian
+
+### B. Menggiring Bebek
+diselesaikan oleh kian
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int jantan = 67;
+    int betina = 98;
+
+    if (jantan % 2 == 0) {
+        cout << "banyaknya bebek jantan adalah bilangan genap" << endl;
+    }
+
+    if (betina% 2 == 0) {
+        cout << "banyaknya bebek betina adalah bilangan genap" << endl;
+    }
+}
+
+```
+
+
+### C. Perkenalan Else
+diselesaikan oleh kian
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int total_bebek = 67 + 98;
+
+    if (total_bebek % 2 == 0) {
+        cout << "total banyaknya bebek adalah bilangan genap";}
+    else
+        cout << "total banyaknya bebek adalah bilangan ganjil";
+}
+
+```
+
+### D. Perkenalan Else If
+diselesaikan oleh kian
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int total_bebek = 67 + 98;
+    
+    if (total_bebek % 13 == 0) {
+        cout << 13 << endl;
+    }
+    else if (total_bebek % 11 == 0) {
+        cout << 11 << endl;
+    }
+    else if (total_bebek % 5 == 0) {
+        cout << 5 << endl;
+    }
+    else if (total_bebek % 3 == 0) {
+        cout << 3 << endl;
+    } else {
+        cout << 1 << endl;
+    }
+}
+
+```
+
+### E. Kuis If
+diselesaikan oleh kian
+
+### F. Pendalaman Ekspresi Boolean
+diselesaikan oleh kian
+
+### G. Mengukur Kandang II
+diselesaikan oleh kian
+
+```cpp
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    int A = 364 * 79;
+    int B = 243 * 99;
+    int C = 189 * 155;
+    
+    string terbesar, terkecil;
+
+    if (A > B && A > C) {
+        terbesar = "A";
+
+
+        if (B < C) {
+            terkecil = "B";
+        } else {
+            terkecil = "C";
+        }
+    } else if (B>A && B>C) {
+        terbesar = "B";
+
+        if (A<C) {
+            terkecil = "A";
+        } else {
+            terkecil = "C";
+        }
+    } else {
+        terbesar = "C";
+
+        if (A<B){
+        terkecil = "A";
+        } else{
+            terkecil = "B";}
+        }
+    cout << terbesar << endl;
+    cout << terkecil << endl;
+}
+```
+
