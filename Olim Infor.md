@@ -532,3 +532,53 @@ int main() {
 }
 
 ```
+
+
+### F. Mencari Pola II
+diselesaikan oleh kian
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int N = 10;
+
+    for (int vertical = 1; vertical <= N; vertical++) {
+        for (int horizonal = 1; horizonal <= N; horizonal++) {
+            if (vertical ==1 || vertical==N || horizonal==1 || horizonal==N ) {
+                // jika baris atau kolom saat ini adalah yang pertama atau terakhir, cetak bintang
+                cout << "*";
+            } else {
+                // selain itu, cetak titik
+                cout << ".";
+            }
+        }
+        cout << endl;
+    }
+}
+
+```
+### G. Mencari Pola III
+diselesaikan oleh kian
+
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int N = 10;
+
+    for (int i = 1; i <= N; i++) {
+        for (int j= 1; j <= N; j++){
+            if (i==j || i+j ==N+1)
+               cout << "*";
+            else
+                cout << ".";
+            }
+     cout << endl;
+    }
+}
+```
+
