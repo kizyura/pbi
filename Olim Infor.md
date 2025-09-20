@@ -582,3 +582,170 @@ int main() {
 }
 ```
 
+### H. Rangkuman: Perulangan & Percabangan
+diselesaikan oleh kian
+
+
+
+## BAB 6
+
+
+### A. Toko Kandang
+diselesaikan oleh kian
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int luas1 = 225 * 335;
+    int luas2 = 215 * 394;
+    int luas3 = 198 * 400;
+    int luas4 = 314 * 298;
+    int luas5 = 299 * 278;
+
+    int hasil = 0;
+
+    if (luas1 >= 80000) {
+        hasil++;
+    }
+
+     if (luas2 >= 80000) {
+        hasil++;
+    }
+     if (luas3 >= 80000) {
+        hasil++;
+    }
+     if (luas4 >= 80000) {
+        hasil++;
+    }
+     if (luas5 >= 80000) {
+        hasil++;
+    }
+
+    cout << hasil << endl;
+}
+
+```
+
+
+### B. Perkenalan Larik (Array)
+diselesaikan oleh kian
+
+```cpp
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int luas[5];
+
+    luas[0] = 225 * 335;
+    luas[1] = 215 * 394;
+    luas[2] = 198 * 400;
+    luas[3] = 314 * 298;
+    luas[4] = 299 * 278;
+
+    int hasil = 0;
+
+    for (int i = 0; i < 5; i++) {
+        if (luas[i] >= 80000) {
+            hasil++;
+        }
+    }
+
+    cout << hasil << endl;
+}
+```
+
+### C. Kandang Terbesar
+diselesaikan oleh kian
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int luas[5];
+
+    luas[0] = 225 * 335;
+    luas[1] = 215 * 394;
+    luas[2] = 198 * 400;
+    luas[3] = 314 * 298;
+    luas[4] = 299 * 278;
+
+    // Buat sebuah variabel yang menampung luas terbesar.
+    // Pada awalnya, isi variabel tersebut dengan luas dari kandang pertama.
+    int ans = luas[0];
+
+    // Untuk setiap kandang sisanya:
+    for (int i = 1; i < 5; i++) {
+        // Jika luasnya lebih besar daripada variabel luas terbesar:
+        if (ans < luas[i]) {
+            // Perbarui nilai variabel luas terbesar dengan luas kandang tersebut.
+          ans = luas[i];
+        }
+    }
+
+    cout << ans;
+}
+
+```
+
+### D. Jual-Beli Bebek III
+diselesaikan oleh kian
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int beli[10] = {13, 100, 0, 4, 31, 0, 178, 23, 1, 13};
+    int jual[10] = {0, 2, 24, 0, 10, 4, 0, 121, 0, 15};
+
+    int bebek = 0;
+
+    for (int i = 0; i < 10; i++) {
+        bebek += beli[i] - jual[i];
+        cout << bebek << endl;
+    }
+}
+
+```
+
+### E. Bermain Lampu Kandang
+diselesaikan oleh kian
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    bool lampu[101];
+    int hasil = 0;
+    // Pada mulanya, seluruh lampu dalam kondisi mati.
+    for (int i = 1; i <= 100; i++) {
+        lampu[i] = false;
+    }
+
+    // Untuk setiap jam (pukul p),
+    for (int p = 1; p <= 10; p++) {
+        // untuk setiap lampu nomor i,
+        for (int i = 1; i <= 100; i++) {
+            // jika i merupakan kelipatan p,
+            if (i % p == 0) {
+                // tekan saklarnya.
+                lampu[i] = !lampu[i];
+            }
+        }
+    }
+
+    // Hitung banyaknya lampu yang menyala,
+   for (int i=1;i<=100;i++)
+     if (lampu[i] ==true)
+     hasil++;
+    // lalu cetak.
+    cout<< hasil;
+}
+
+```
