@@ -749,3 +749,111 @@ int main() {
 }
 
 ```
+
+## F. Toko Kandang II
+diselesaikan oleh kian
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int luas[4][3] = {
+        {225 * 335, 299 * 278, 300 * 250},
+        {215 * 394, 144 * 718, 300 * 290},
+        {200 * 400, 240 * 333, 142 * 619},
+        {314 * 298, 411 * 198, 333 * 222}
+    };
+
+    int hasil = 0;
+
+    for (int i = 0; i < 4; i++) {
+        for (int j = 0; j < 3; j++) {
+            if( luas[i][j] >= 80000)
+            hasil++;
+        }
+    }
+
+    cout << hasil << endl;
+}
+
+```
+
+### G. Menutup Toko
+diselesaikan oleh kian
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int luas[4][3] = {
+        {225 * 335, 299 * 278, 300 * 250},
+        {215 * 394, 144 * 718, 300 * 290},
+        {200 * 400, 240 * 333, 142 * 619},
+        {314 * 298, 411 * 198, 333 * 222}
+    };
+
+    int harga_jual[3] = {100, 120, 150};
+    long long hasil[3] = {0};
+
+    for (int K=0; K<3; K++){
+        for (int N=0; N<4; N++)
+        hasil[K] += (long long)luas[N][K]* harga_jual[K];
+    }
+    for (int K=0; K<3; K++){
+        cout << hasil[K] << endl;
+    }
+        
+        
+}
+```
+
+### H. Rangkuman: Larik
+diselesaikan oleh kian
+
+
+
+## BAB 7
+
+
+### A. Memborong Bebek
+diselesaikan oleh kian
+```cpp
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int jantan[4] = {0, 10, 50, 60};
+    int betina[4] = {7, 80, 9, 40};
+
+    for (int i = 0; i < 4; i++) {
+        int harga_bebek;
+
+        // hitung biaya membeli bebek-bebek jantan
+        if (jantan[i] < 10) {
+            harga_bebek = 100000;
+        } else if (jantan[i]>=10 && jantan[i]<=50) {
+            harga_bebek = 75000;
+        } else {
+            harga_bebek = 50000;
+        }
+        int biaya_jantan = jantan[i]*harga_bebek;
+
+        // hitung biaya membeli bebek-bebek betina
+        if (betina[i] < 10) {
+            harga_bebek = 100000;
+        } else if (betina[i]>=10 && betina[i]<=50) {
+            harga_bebek = 75000;
+        } else {
+            harga_bebek = 50000;
+        }
+        int biaya_betina = betina[i]*harga_bebek;
+
+        // cetak total biaya
+        cout << biaya_jantan + biaya_betina << endl;
+    }
+}
+```
+

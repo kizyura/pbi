@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#include",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -79,8 +79,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "972775dd82da0643",
@@ -182,7 +181,7 @@
       "bases:Create new base": false
     }
   },
-  "active": "d0be20c1a45873b2",
+  "active": "cc5d367e53431229",
   "lastOpenFiles": [
     "Olim Infor.md",
     "pbi",
