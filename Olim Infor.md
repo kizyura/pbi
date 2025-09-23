@@ -797,7 +797,7 @@ int main() {
     };
 
     int harga_jual[3] = {100, 120, 150};
-    long long hasil[3] = {0};
+    long long hasil[3] = {0, 0, 0};
 
     for (int K=0; K<3; K++){
         for (int N=0; N<4; N++)
