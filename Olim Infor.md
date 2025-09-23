@@ -757,6 +757,8 @@ diselesaikan oleh kian
 #include <iostream>
 using namespace std;
 
+// kian ganteng : jarvis tolong kerjakan ini.
+// jarvis : baik
 int main() {
     int luas[4][3] = {
         {225 * 335, 299 * 278, 300 * 250},
@@ -894,4 +896,7 @@ int main() {
 
 ### C. Fungsi int main()
 diselesaikan oleh kian
+
+
+
 
